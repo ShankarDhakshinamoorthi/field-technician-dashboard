@@ -1,0 +1,11 @@
+Ticket_ID,Customer,Email_Address,Issue_Type,Priority,Status,Open_Date
+T-001,ACME Corporation,contact@acme.com,Technical,High,Resolved,2024-01-10
+T-002,Blue Sky Technologies,info@bluesky.com,Billing,Medium,Open,2024-02-15
+T-003,Green Valley Farms,hello@greenvalley.com,Technical,Low,Resolved,2024-01-22
+T-004,Summit Healthcare,admin@summithealth.com,Feature Request,High,In Progress,2024-03-01
+T-005,Rapid Logistics,ops@rapidlogistics.com,Technical,High,Resolved,2024-02-10
+T-006,Pinnacle Retail,sales@pinnacle.com,Billing,Medium,Open,2024-01-30
+T-007,Nova Energy,info@novaenergy.com,Technical,Low,Resolved,2024-03-05
+T-008,Coastal Builders,build@coastal.com,Feature Request,Medium,Open,2024-02-20
+T-009,Metro Financial,contact@metrofin.com,Technical,High,In Progress,2024-03-10
+T-010,Apex Solutions,hello@apexsol.com,Billing,Low,Resolved,2024-01-15

@@ -1,0 +1,11 @@
+SF_ID,Company_Name,Contact_Email,Phone,Industry,Account_Owner
+SF-001,ACME Corporation,contact@acme.com,555-1001,Manufacturing,James Wilson
+SF-002,Blue Sky Technologies,info@bluesky.com,555-1002,Technology,Maria Garcia
+SF-003,Green Valley Farms,hello@greenvalley.com,555-1003,Agriculture,James Wilson
+SF-004,Summit Healthcare,admin@summithealth.com,555-1004,Healthcare,Sarah Chen
+SF-005,Rapid Logistics,ops@rapidlogistics.com,555-1005,Transportation,Maria Garcia
+SF-006,Pinnacle Retail,sales@pinnacle.com,555-1006,Retail,James Wilson
+SF-007,Nova Energy,info@novaenergy.com,555-1007,Energy,Sarah Chen
+SF-008,Coastal Builders,build@coastal.com,555-1008,Construction,Maria Garcia
+SF-009,Metro Financial,contact@metrofin.com,555-1009,Finance,James Wilson
+SF-010,Apex Solutions,hello@apexsol.com,555-1010,Technology,Sarah Chen

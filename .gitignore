@@ -13,3 +13,9 @@ rejected_rows.csv
 processed_files.json
 master_customers.xlsx
 .claude/
+
+# Node / Next.js
+node_modules/
+.next/
+test-results/
+playwright-report/

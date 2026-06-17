@@ -1,0 +1,11 @@
+Billing_ID,Client_Name,Email,Annual_Revenue,Payment_Status,Contract_Start
+BILL-101,Acme Corp,contact@acme.com,250000,Active,2022-03-01
+BILL-102,BlueSky Tech,info@bluesky.com,180000,Active,2021-07-15
+BILL-103,Green Valley,hello@greenvalley.com,95000,Overdue,2023-01-10
+BILL-104,Summit Health,admin@summithealth.com,420000,Active,2020-11-20
+BILL-105,Rapid Log,ops@rapidlogistics.com,310000,Active,2022-08-05
+BILL-106,Pinnacle,sales@pinnacle.com,150000,Inactive,2021-04-12
+BILL-107,Nova Energy Inc,info@novaenergy.com,275000,Active,2023-03-18
+BILL-108,Coastal,build@coastal.com,88000,Active,2022-09-30
+BILL-109,Metro Fin,contact@metrofin.com,195000,Overdue,2021-12-01
+BILL-110,Apex,hello@apexsol.com,230000,Active,2023-06-15

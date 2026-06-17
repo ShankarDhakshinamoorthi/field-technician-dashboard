@@ -1,0 +1,11 @@
+Mktg_ID,Organization,Email,Segment,Last_Campaign_Sent,Email_Opens,Subscribed
+M-001,ACME Corp,contact@acme.com,Enterprise,2024-02-01,12,Yes
+M-002,Bluesky Technologies,info@bluesky.com,Mid-Market,2024-02-01,8,Yes
+M-003,Green Valley Farms,hello@greenvalley.com,Small Business,2024-01-15,3,No
+M-004,Summit Healthcare,admin@summithealth.com,Enterprise,2024-02-01,15,Yes
+M-005,Rapid Logistics LLC,ops@rapidlogistics.com,Mid-Market,2024-02-01,6,Yes
+M-006,Pinnacle Retail Group,sales@pinnacle.com,Small Business,2024-01-15,2,No
+M-007,Nova Energy,info@novaenergy.com,Mid-Market,2024-02-01,9,Yes
+M-008,Coastal Builders,build@coastal.com,Small Business,2024-02-01,4,Yes
+M-009,Metro Financial Services,contact@metrofin.com,Enterprise,2024-01-15,11,Yes
+M-010,Apex Solutions,hello@apexsol.com,Mid-Market,2024-02-01,7,Yes

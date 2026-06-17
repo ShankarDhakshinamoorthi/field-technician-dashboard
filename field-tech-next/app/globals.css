@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:        #0B0E14;
+  --surface:   #111620;
+  --card:      #17202E;
+  --elevated:  #1E2A3A;
+  --border:    rgba(255,255,255,0.06);
+  --copper:    #D4834A;
+  --pass:      #3DD68C;
+  --fail:      #F06060;
+  --text-1:    #EDF0F5;
+  --text-2:    #7A8699;
+  --text-3:    #4A5568;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  background-color: var(--bg);
+  color: var(--text-1);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--elevated); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-3); }
+
+/* SVG grain texture */
+.grain::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+}
+
+/* Glow ring on KPI cards hover */
+.kpi-card {
+  transition: transform 0.22s cubic-bezier(0.34,1.56,0.64,1),
+              box-shadow 0.22s cubic-bezier(0.34,1.56,0.64,1);
+}
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5), 0 16px 48px rgba(0,0,0,0.4),
+              0 0 0 1px rgba(212,131,74,0.2), 0 0 32px rgba(212,131,74,0.1);
+}
+
+/* Table row hover */
+.table-row {
+  transition: background-color 0.15s ease, opacity 0.15s ease;
+}
+.table-row:hover {
+  background-color: rgba(212,131,74,0.05);
+}
+
+/* Bar hover */
+.recharts-bar-rectangle:hover { opacity: 0.85; }
+
+/* Focus visible */
+[data-focus]:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--copper);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Active press */
+button:active { transform: scale(0.98); }

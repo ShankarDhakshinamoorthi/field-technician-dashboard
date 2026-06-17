@@ -1,0 +1,11 @@
+Forecast_ID,Customer_Email,Q1_Forecast,Q2_Forecast,Q3_Forecast,Q4_Forecast,Total_Year_Forecast,Confidence
+F-001,contact@acme.com,65000,70000,72000,75000,282000,High
+F-002,info@bluesky.com,42000,45000,48000,50000,185000,Medium
+F-003,hello@greenvalley.com,20000,22000,21000,23000,86000,Low
+F-004,admin@summithealth.com,100000,110000,115000,120000,445000,High
+F-005,ops@rapidlogistics.com,75000,78000,80000,82000,315000,High
+F-006,sales@pinnacle.com,30000,28000,25000,22000,105000,Low
+F-007,info@novaenergy.com,65000,68000,70000,75000,278000,Medium
+F-008,build@coastal.com,20000,22000,24000,25000,91000,Medium
+F-009,contact@metrofin.com,45000,48000,50000,52000,195000,Medium
+F-010,hello@apexsol.com,55000,58000,60000,65000,238000,High

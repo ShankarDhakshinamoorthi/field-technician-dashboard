@@ -1,0 +1,139 @@
+{
+  "_comment": "THE BRAIN — edit this file to add new column name variations. No Python code changes needed.",
+
+  "join_key": {
+    "standard_name": "email",
+    "aliases": [
+      "email", "contact_email", "email_address", "customer_email",
+      "e_mail", "client_email", "user_email", "emailaddress",
+      "contactemail", "customeremail", "emailaddr", "mail"
+    ],
+    "required": true
+  },
+
+  "columns": {
+    "company_name": [
+      "company_name", "company", "organization", "org", "client_name",
+      "customer_name", "account_name", "business_name", "client",
+      "account", "companyname", "clientname", "firm"
+    ],
+    "phone": [
+      "phone", "phone_number", "telephone", "tel", "mobile", "cell",
+      "contact_phone", "phonenumber", "phone_no"
+    ],
+    "industry": [
+      "industry", "sector", "vertical", "market_segment", "business_type",
+      "industry_type", "industry_name"
+    ],
+    "account_owner": [
+      "account_owner", "owner", "sales_rep", "account_manager", "am",
+      "sales_person", "rep", "assigned_to", "accountowner", "salesrep",
+      "relationship_manager"
+    ],
+    "annual_revenue": [
+      "annual_revenue", "revenue", "arr", "mrr", "contract_value",
+      "billing_amount", "total_value", "annualrevenue", "annualvalue",
+      "yearly_revenue", "total_contract_value", "acv", "total_revenue"
+    ],
+    "payment_status": [
+      "payment_status", "billing_status", "invoice_status", "account_status",
+      "payment_state", "paymentstatus", "billingstatus", "pay_status",
+      "payment_condition"
+    ],
+    "contract_start": [
+      "contract_start", "start_date", "contract_start_date", "agreement_date",
+      "activation_date", "contractstart", "startdate", "effective_date"
+    ],
+    "support_status": [
+      "status", "ticket_status", "case_status", "support_status",
+      "incident_status", "request_status", "ticketstatus", "casestatus",
+      "resolution_status"
+    ],
+    "issue_type": [
+      "issue_type", "category", "case_type", "ticket_type", "problem_type",
+      "issuetype", "casetype", "request_type", "ticket_category"
+    ],
+    "priority": [
+      "priority", "urgency", "severity", "ticket_priority", "case_priority",
+      "impact", "issue_priority"
+    ],
+    "ticket_open_date": [
+      "open_date", "ticket_date", "created_date", "case_date",
+      "incident_date", "date_opened", "opendate", "ticketdate", "created_at"
+    ],
+    "segment": [
+      "segment", "customer_segment", "market_segment", "tier",
+      "customer_tier", "account_tier", "size", "company_size",
+      "customer_type"
+    ],
+    "last_campaign_sent": [
+      "last_campaign_sent", "last_campaign", "campaign_date",
+      "last_email_sent", "last_contact_date", "lastcampaign",
+      "last_mailing", "most_recent_campaign"
+    ],
+    "email_opens": [
+      "email_opens", "opens", "open_count", "emails_opened",
+      "campaign_opens", "emailopens", "opencount", "open_rate"
+    ],
+    "subscribed": [
+      "subscribed", "opted_in", "mailing_list", "newsletter",
+      "email_opt_in", "marketing_consent", "optedin", "is_subscribed"
+    ],
+    "q1_forecast": [
+      "q1_forecast", "q1", "quarter1", "q1_revenue", "forecast_q1",
+      "q1forecast", "q1rev", "jan_mar_forecast"
+    ],
+    "q2_forecast": [
+      "q2_forecast", "q2", "quarter2", "q2_revenue", "forecast_q2",
+      "q2forecast", "q2rev", "apr_jun_forecast"
+    ],
+    "q3_forecast": [
+      "q3_forecast", "q3", "quarter3", "q3_revenue", "forecast_q3",
+      "q3forecast", "q3rev", "jul_sep_forecast"
+    ],
+    "q4_forecast": [
+      "q4_forecast", "q4", "quarter4", "q4_revenue", "forecast_q4",
+      "q4forecast", "q4rev", "oct_dec_forecast"
+    ],
+    "total_forecast_revenue": [
+      "total_year_forecast", "total_forecast", "annual_forecast",
+      "yearly_forecast", "total_forecast_revenue", "totalforecast",
+      "total_projected", "full_year_forecast", "fy_forecast",
+      "annual_projection"
+    ],
+    "forecast_confidence": [
+      "confidence", "forecast_confidence", "probability", "confidence_level",
+      "win_probability", "deal_probability", "forecast_accuracy"
+    ]
+  },
+
+  "flag_rules": {
+    "_comment": "Add new values here to flag more customers — no code change needed.",
+    "payment_overdue":  ["overdue", "past_due", "delinquent", "unpaid", "suspended", "late", "collections"],
+    "support_open":     ["open", "in progress", "pending", "awaiting", "escalated", "new", "reopened", "active"]
+  },
+
+  "source_types": {
+    "_comment": "Pipeline uses filename keywords + column fingerprints to classify each incoming file.",
+    "salesforce": {
+      "filename_patterns": ["salesforce", "sf_", "sfdc", "crm_export", "crm"],
+      "column_fingerprint": ["sf_id", "account_owner", "contact_email", "account_name", "sfid"]
+    },
+    "billing": {
+      "filename_patterns": ["billing", "invoice", "payment", "billing_data", "accounts_receivable", "ar_"],
+      "column_fingerprint": ["billing_id", "payment_status", "annual_revenue", "contract_start", "invoice"]
+    },
+    "support": {
+      "filename_patterns": ["support", "ticket", "helpdesk", "service_desk", "case_export", "cases"],
+      "column_fingerprint": ["ticket_id", "issue_type", "priority", "open_date", "case_id", "status"]
+    },
+    "marketing": {
+      "filename_patterns": ["marketing", "mktg", "campaign", "email_list", "contacts", "marketing_data"],
+      "column_fingerprint": ["mktg_id", "segment", "email_opens", "subscribed", "last_campaign_sent"]
+    },
+    "forecast": {
+      "filename_patterns": ["forecast", "projection", "pipeline", "sales_forecast", "revenue_forecast"],
+      "column_fingerprint": ["forecast_id", "q1_forecast", "q2_forecast", "total_year_forecast", "confidence"]
+    }
+  }
+}
