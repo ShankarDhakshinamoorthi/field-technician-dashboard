@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.DS_Store
+Thumbs.db
+output/
+archive/
+inbox/
+logs/
+*.parquet
+rejected_rows.csv
+processed_files.json
+master_customers.xlsx
+.claude/
